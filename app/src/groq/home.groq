@@ -1,0 +1,8 @@
+*[_type == 'post'] {
+   ...,
+  author->,
+  
+   image {
+     asset->{url}
+   }
+}
