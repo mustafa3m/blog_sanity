@@ -1,5 +1,7 @@
 <template>
   <Header class="header" />
+  <br />
+
   <div class="grid">
     <main>
       <Pres />
@@ -16,7 +18,7 @@
 
           <p class="article-author">{{ article.author.name }}</p>
 
-          <!-- <p class="article-category">{{ article.category._ref}}</p> -->
+      
 
           <p class="articlecontent">{{ article.description }}</p>
 
