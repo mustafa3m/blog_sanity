@@ -1,15 +1,15 @@
 import Home from './views/Home.vue';
-import ProjectPage from './views/ProjectPage.vue';
+import About from "./views/About.vue";
 
 export default [
-	{ 
-		name: 'projectPage', 
-		path: '/:projectSlug',
-		component: ProjectPage 
-	},
-	{ 
-		name: 'home', 
-		path: '/', 
-		component: Home 
-	},
+  {
+    name: "about",
+    path: "/:about",
+    component: About,
+  },
+  {
+    name: "home",
+    path: "/",
+    component: Home,
+  },
 ];
