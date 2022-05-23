@@ -1,5 +1,5 @@
 <template>
-  <footer id="contact">
+  <footer  id="contact">
     <div class="icon">
       <p>Let s get in touch.</p>
 
@@ -28,6 +28,7 @@
 <style scoped>
   footer {
     background: black;
+    width: 100%;
     padding: 30px;
     font-size: 1.8rem;
     text-align: center;
@@ -74,5 +75,6 @@
     .icon p {
       margin-bottom: 2rem;
     }
+    
   }
 </style>
