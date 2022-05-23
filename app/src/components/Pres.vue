@@ -9,7 +9,7 @@
     </div>
 
     <div class="presentation-content-txt">
-      <h2>Welcome to the blog</h2>
+      <h2>Welcome to  Christiania book club</h2>
       <p>
         For the first time, you can find some of the best books by authors and
         historians from around the world who want to share their stories and
