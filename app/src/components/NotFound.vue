@@ -1,10 +1,10 @@
 <template>
 	<div class="notfound">
-		<h1>Wooooops!</h1>
+		<!-- <h1>Wooooops!</h1>
 		<p>Page Not Found<</p>
 		<router-link class="notfound__button" to="/">
 			<button>Click here and we'll guide you back to home!</button>
-		</router-link>
+		</router-link> -->
 	</div>
 </template>
 

@@ -1,50 +1,61 @@
+/* Box sizing */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-button, input, table {
-	font: inherit;
-	background: transparent;
-	border: none;
+button,
+input,
+table {
+  font: inherit;
+  background: transparent;
+  border: none;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 img {
-	width: 100%;
+  width: 100%;
 }
-body{
-
-    font-size: 1.6rem;
-    color: var(--text);
-    font-family: var(--font-family);
-}
-
-
-
-h1,h2,h3,h4{
-    margin-bottom: 2rem;
+body {
+  background: var(--background);
+  color: var(--text);
+  font-size: 1.6rem;
+  font-family: var(--font-family);
 }
 
-h1{font-size: 3.5rem;}
-h2{font-size: 1.8rem ;}
-h3{font-size: 2.5rem ;}
-h4{font-size: 2rem ;}
-
-
-ul{
-    list-style-type: none;}
-    
-img{
-    max-width: 100%;
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 2rem;
 }
 
-a{
-    color: var(--text);
-    text-decoration: none;
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p{
+	font-size: 2.5rem;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
 }

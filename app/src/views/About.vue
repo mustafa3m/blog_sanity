@@ -1,16 +1,52 @@
 <template>
-    <div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero adipisci aliquam est, doloribus itaque sequi sapiente voluptates illo assumenda perspiciatis?</p>
-
-    </div>
+  <div class="about-content-txt">
+    <h2>The Oslo Bookstore</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam ducimus
+      suscipit accusamus doloremque laboriosam itaque quam temporibus incidunt
+      numquam?
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam ducimus
+      suscipit accusamus doloremque laboriosam itaque quam temporibus incidunt
+      numquam?
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam ducimus
+      suscipit accusamus doloremque laboriosam itaque quam temporibus incidunt
+      numquam?
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam ducimus
+      suscipit accusamus doloremque laboriosam itaque quam temporibus incidunt
+      numquam?
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam ducimus
+      suscipit accusamus doloremque laboriosam itaque quam temporibus incidunt
+      numquam?
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam ducimus
+      suscipit accusamus doloremque laboriosam itaque quam temporibus incidunt
+      numquam?
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nam ducimus
+      suscipit accusamus doloremque laboriosam itaque quam temporibus incidunt
+      numquam?
+    </p>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+  export default {};
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+  .about-content-txt {
+    
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .about-content-txt h2 {
+    margin-bottom: 2rem;
+  }
+
+  .about-content-txt p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
 </style>

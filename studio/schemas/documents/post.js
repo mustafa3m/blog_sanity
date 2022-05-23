@@ -38,13 +38,13 @@ export default {
       type: "number",
     },
     {
-      title: "Category",
-      name: "category",
+      title: "Categorys",
+      name: "categorys",
       type: "array",
       of: [
         {
           type: "reference",
-          to: [{ type: "category" }],
+          to: [{ type: "categorys" }],
         },
       ],
     },

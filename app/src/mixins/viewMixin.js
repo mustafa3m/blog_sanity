@@ -4,13 +4,13 @@ export default {
 	data() {
 		return {
 			loading: true,
-			result: null
+			results: null
 		}
 	},
 
 	methods: {
 		async sanityFetch(query, params) {
-			this.result = await sanity.fetch(query, params);
+			this.results = await sanity.fetch(query, params);
 			this.loading = false;
 		},
 

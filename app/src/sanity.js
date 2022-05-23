@@ -5,4 +5,5 @@ export default sanityClient({
   dataset: "production",
   apiVersion: "2022-03-30", //dagen prosjektet ble først opprettet/sist oppdatert
   useCdn: false, //false for localhost, true for netlify
+  withCredentials: true //false for
 });

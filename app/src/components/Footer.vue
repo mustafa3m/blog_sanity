@@ -1,14 +1,20 @@
 <template>
-  <footer>
+  <footer id="contact">
     <div class="icon">
       <p>Let s get in touch.</p>
+
       <div class="image">
-        <a href="#"><img src="/images/1.svg" alt="image facebook" /></a>
-        <a href="#"><img src="/images/2.svg" alt="image twitter" /></a>
-        <a href="#"> <img src="/images/3.svg" alt="image envelope" /></a>
-    
-        
-       
+        <a href="https://www.facebook.com/"
+          ><img src="/images/1.svg" alt="image facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="/images/2.svg" alt="image twitter"
+        /></a>
+        <a
+          href="https://accounts.google.com/ServiceLogin/signinchooser?hl=no&passive=true&continue=https%3A%2F%2Fwww.google.no%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+        >
+          <img src="/images/3.svg" alt="image envelope"
+        /></a>
       </div>
     </div>
   </footer>
@@ -19,7 +25,7 @@
   export default {};
 </script>
 
-<style>
+<style scoped>
   footer {
     background: black;
     padding: 30px;
@@ -41,12 +47,32 @@
   .image {
     display: flex;
     justify-content: center;
+  }
+
+  .image a img {
+    height: 6rem;
+    width: 6rem;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: 1rem;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
   }
-  .image:hover{
-    transform-origin: 0px 0px;
+
+  .image a img:hover {
+    transform: scale(1.1);
   }
-  p {
+  .icon p {
     margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    .image {
+      flex-direction: column;
+    }
+    .icon p {
+      margin-bottom: 2rem;
+    }
   }
 </style>

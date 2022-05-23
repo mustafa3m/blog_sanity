@@ -1,131 +1,165 @@
 <template>
   <header>
-    <nav>
-      <router-link class="header-nav header-brand active" to="/">Home</router-link>
-      <div class="logo"><img src="images/logo.jpg" alt="image-logo" /></div>
-      <input type="checkbox" id="click" />
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-      </ul>
-    </nav>
+    <div class="container-header">
+      <nav class="nav_checkbox">
+        <router-link to="/"
+          ><img class="logo" src="images/logo.jpg" alt="image-logo"
+        /></router-link>
+        <input type="checkbox" id="tab-nav" class="tab-nav" />
+        <label for="tab-nav" class="label">
+          <div class="burger"></div>
+          <div class="burger"></div>
+          <div class="burger"></div>
+        </label>
+
+        <ul class="content_nav">
+         
+          
+          <li><a href="#">HOME</a></li>
+           <li><a href="#">ABOUT</a></li>
+          <li><a href="#">BLOG</a></li> 
+          <li><a href="#contact">CONTACT</a></li>
+          
+          <!--
+            <router-link to="/">HOME</router-link>
+             <router-link to="/footer">CONTACT</router-link> 
+              <router-link to="/about">ABOUT</router-link>
+          <router-link to="/blog">BLOG</router-link>
+          <li><a href="#contact">CONTACT</a></li> -->
+          
+        </ul>
+      </nav>
+    </div>
   </header>
 </template>
-<style scope>
-  nav {
-    display: flex;
-    height: 80px;
-    width: 100%;
-    background: #1b1b1b;
+
+<style lang="css" scope>
+  header {
+    background-color: rgba(0, 0, 0, 0.404);
+     width: 100%;
+    
+    
+     
+     
+  }
+ 
+
+  
+
+  .nav_checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
+    padding: 10px 0px;
   }
-  nav .logo {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-  }
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
-  nav ul li {
-    margin: 0 5px;
-  }
-  nav ul li a {
-    color: #f2f2f2;
+
+  .logo {
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
-  nav ul li a.active,
-  nav ul li a:hover {
-    color: #111;
-    background: #fff;
-  }
-  nav .menu-btn i {
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-  }
-  input[type="checkbox"] {
-    display: none;
-  }
-  .header-brand {
-    font-size: 4rem;
-    font-weight: 700;
+    color: white;
+    padding-left: 10px;
+     height: 6rem;
+    width: 6rem;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: 1rem;
   }
 
-  .header-nav {
-    font-size: 1.8rem;
-    padding: 0px 10px;
+  .tab-nav {
+    outline: none;
+    display: none;
   }
 
-  /* @media screen and (min-width: 968px) {
-    nav .menu-btn i {
-      display: block;
-    }
-    #click:checked ~ .menu-btn i:before {
-      content: "\f00d";
-    }
-    nav ul {
-      position: fixed;
-      top: 80px;
-      left: -100%;
-      background: #111;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      display: block;
-      transition: all 0.3s ease;
-    }
-    #click:checked ~ ul {
-      left: 0;
-    }
-    nav ul li {
-      width: 100%;
-      margin: 40px 0;
-    }
-    nav ul li a {
-      width: 100%;
-      margin-left: -100%;
-      display: block;
-      font-size: 20px;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    #click:checked ~ ul li a {
-      margin-left: 0px;
-    }
-    nav ul li a.active,
-    nav ul li a:hover {
-      background: none;
-      color: cyan;
-    }
+  .label {
+    display: none;
+    color: white;
   }
-  .content {
+
+  .burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+  }
+
+  .content_nav {
+    display: flex;
+    justify-content:space-between;
+    /* grid-column: 3; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content_nav li {
+    display: inline-block;
+    padding-right: 10px;
+    margin: 10px;
+  }
+
+  .content_nav li a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+
+  .content_nav li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: -1;
-    width: 100%;
-    padding: 0 30px;
-    color: #1b1b1b;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
   }
-  .content div {
-    font-size: 40px;
-    font-weight: 700;
-  } */
+
+  .content_nav li a:hover::after {
+    transform: scale(1, 1);
+  }
+
+ 
+  @media screen and (max-width: 500px) {
+      .logo{
+          margin-top: 1rem;
+          width: 80px;
+      }
+      
+    .label {
+      display: grid;
+      cursor: pointer;
+      grid-column: 3;
+      padding-right: 10px;
+    }
+
+    .content_nav {
+      display: grid;
+      gap:2rem;
+      grid-template-columns: 1fr;
+      grid-column: 1/4;
+      text-align: center;
+      max-height: 0;
+      overflow: hidden;
+      transition: all ease-in-out 0.6s;
+    }
+    .content_nav li a {
+        font-size : 2rem;
+    }
+
+    .nav_checkbox input:checked ~ .content_nav {
+        width: 100%;
+      max-height: 500px;
+    }
+
+    .content_nav li{
+      padding: 15px 0px;
+    }
+    
+    @media (min-width: 501px) and (max-width: 767px) {
+      
+
+    }
+  }
 </style>

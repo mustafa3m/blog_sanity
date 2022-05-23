@@ -1,8 +1,8 @@
 *[_type == 'post'] {
    ...,
-  author->,
+   "author": author->.name,
+   "image": image.asset->.url
   
-   image {
-     asset->{url}
-   }
 }
+  
+ 
